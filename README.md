@@ -2,11 +2,11 @@
 
 Quick note to Arch Linux Disotro
 
-==
+----
 
 ## Installation
 
-==
+=====
 
 ## Issues:
 
