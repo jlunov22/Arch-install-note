@@ -6,6 +6,23 @@ Quick note to Arch Linux Disotro
 
 ## Installation
 
+### Partition 
+
+gdisk /dev/sda
+
+LABEL SIZE CODE NAME
+BOOT 1GB EF00 EFI system partition
+ROOT Rest 8300 Linux File System
+
+Number 	Type 	Size
+1 	EFI 	512 Mb
+2 	Linux Filesystem 	99.5Gb (all of the remaining space )
+
+### Format 
+
+
+
+
 =====
 
 ## Issues:
