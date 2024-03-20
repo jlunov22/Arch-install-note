@@ -10,13 +10,12 @@ Quick note to Arch Linux Disotro
 
 gdisk /dev/sda
 
-LABEL SIZE CODE NAME
-BOOT 1GB EF00 EFI system partition
-ROOT Rest 8300 Linux File System
+| LABEL | SIZE | CODE | NAME |
+|---|---|---|---|
+| BOOT | 1GB | EF00 | EFI system partition |
+| ROOT | Rest | 8300 | Linux File System |
 
-Number 	Type 	Size
-1 	EFI 	512 Mb
-2 	Linux Filesystem 	99.5Gb (all of the remaining space )
+
 
 ### Format 
 
@@ -24,6 +23,28 @@ Number 	Type 	Size
 
 
 =====
+
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+
+> [!TIP]
+> Backup with rsync in local drive 
+
+``$ rsync -av --delete /Directory1/ /Directory2/``
+
 
 ## Issues:
 
@@ -36,7 +57,7 @@ Solution: Change /etc/fstab /boot (/EFI) fmask=0077, dmask=0077
 
 ### Ambient Sensor not working
 
-'https://github.com/mikhail-m1/illuminanced'
+[Ambient Sensor](https://github.com/mikhail-m1/illuminanced)
 
 
 ### DBeaver JDK Version 17+ 
@@ -48,9 +69,8 @@ Solution: Change /etc/fstab /boot (/EFI) fmask=0077, dmask=0077
 ### USB HDD has No Write Access
 
  -Environment: KDE(Plasma) 
- 
  -Mounted USB HDD fs: Btrfs
  
- Solution: Chmod 777 /run/media/[User ID]/[Mounted Device ID]
+ Solution: ``Chmod 777 /run/media/[User ID]/[Mounted Device ID]``
 
  
